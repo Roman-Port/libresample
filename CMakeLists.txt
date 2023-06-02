@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10.2)
-project("resample")
+project("resample" C)
 add_library(resample SHARED src/filterkit.c src/resample.c src/resamplesubs.c)
 set_target_properties(resample PROPERTIES PUBLIC_HEADER include/libresample.h)
 target_include_directories(resample PUBLIC include)
